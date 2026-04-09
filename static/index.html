@@ -1,0 +1,204 @@
+<!-- Copyright (c) Jonas Immanuel Frey. All rights reserved. -->
+<!-- Licensed under the terms specified by Jonas Immanuel Frey. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>topoprints — 3D Topographic Models From Anywhere on Earth</title>
+  <meta name="description" content="Turn any location on Earth into a stunning 3D-printable topographic model. Custom elevation data, precision crafted.">
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="/" class="logo">topo<span>prints</span></a>
+      <div class="nav-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact" class="btn btn-sm">Get In Touch</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-bg">
+      <canvas id="terrain-canvas"></canvas>
+    </div>
+    <div class="hero-content">
+      <h1>The World in Your Hands</h1>
+      <p class="hero-sub">Any location on Earth, transformed into a precise 3D topographic model — ready to print.</p>
+      <a href="#how-it-works" class="btn btn-lg">Discover How</a>
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <svg width="16" height="24" viewBox="0 0 16 24" fill="none">
+        <path d="M8 4v12m0 0l-4-4m4 4l4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </svg>
+    </div>
+  </header>
+
+  <section class="stats">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat">
+          <span class="stat-number">Any</span>
+          <span class="stat-label">Location on Earth</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">Custom</span>
+          <span class="stat-label">Elevation Data</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">3D</span>
+          <span class="stat-label">Print Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <h2 class="section-title">How It Works</h2>
+      <p class="section-subtitle">From coordinates to a physical model in three steps.</p>
+      <div class="steps-grid">
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <circle cx="24" cy="20" r="6" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 42S8 28 8 18a16 16 0 1132 0c0 10-16 24-16 24z" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>1. Pick a Location</h3>
+          <p>Choose any spot on the globe — a mountain range, a coastline, your hometown, or a remote volcanic island.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M6 38l10-14 8 8 8-16 10 12" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <rect x="4" y="6" width="40" height="36" rx="2" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>2. Generate the Model</h3>
+          <p>Real elevation data is processed through a custom application, converting terrain into a high-resolution 3D mesh.</p>
+        </div>
+        <div class="step">
+          <div class="step-icon">
+            <svg viewBox="0 0 48 48" fill="none">
+              <path d="M24 6l18 10v16L24 42 6 32V16L24 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+              <path d="M24 6v36M6 16l18 10 18-10" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>3. Print & Display</h3>
+          <p>Export a print-ready file and bring the terrain to life. A tangible piece of geography you can hold.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery" class="section section-dark">
+    <div class="container">
+      <h2 class="section-title">Gallery</h2>
+      <p class="section-subtitle">A selection of topographic prints from around the world.</p>
+      <div class="gallery-grid">
+        <div class="gallery-card">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 120 80" fill="none">
+              <path d="M0 60 L20 35 L40 50 L70 20 L100 45 L120 30 L120 80 L0 80Z" fill="currentColor" opacity="0.15"/>
+              <path d="M0 60 L20 35 L40 50 L70 20 L100 45 L120 30" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="gallery-info">
+            <h3>The Alps</h3>
+            <p>Central Europe</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 120 80" fill="none">
+              <path d="M0 55 L30 25 L50 40 L80 15 L120 40 L120 80 L0 80Z" fill="currentColor" opacity="0.15"/>
+              <path d="M0 55 L30 25 L50 40 L80 15 L120 40" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="gallery-info">
+            <h3>Mount Fuji</h3>
+            <p>Japan</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 120 80" fill="none">
+              <path d="M0 50 L15 45 L35 30 L60 55 L85 25 L120 50 L120 80 L0 80Z" fill="currentColor" opacity="0.15"/>
+              <path d="M0 50 L15 45 L35 30 L60 55 L85 25 L120 50" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="gallery-info">
+            <h3>Grand Canyon</h3>
+            <p>United States</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 120 80" fill="none">
+              <path d="M0 65 L25 40 L45 55 L60 20 L90 45 L120 35 L120 80 L0 80Z" fill="currentColor" opacity="0.15"/>
+              <path d="M0 65 L25 40 L45 55 L60 20 L90 45 L120 35" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="gallery-info">
+            <h3>Patagonia</h3>
+            <p>Argentina</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 120 80" fill="none">
+              <path d="M0 45 L20 50 L50 20 L75 40 L100 30 L120 45 L120 80 L0 80Z" fill="currentColor" opacity="0.15"/>
+              <path d="M0 45 L20 50 L50 20 L75 40 L100 30 L120 45" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="gallery-info">
+            <h3>Iceland Highlands</h3>
+            <p>Iceland</p>
+          </div>
+        </div>
+        <div class="gallery-card">
+          <div class="gallery-placeholder">
+            <svg viewBox="0 0 120 80" fill="none">
+              <path d="M0 55 L40 30 L60 50 L80 20 L120 55 L120 80 L0 80Z" fill="currentColor" opacity="0.15"/>
+              <path d="M0 55 L40 30 L60 50 L80 20 L120 55" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            </svg>
+          </div>
+          <div class="gallery-info">
+            <h3>Dolomites</h3>
+            <p>Italy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section">
+    <div class="container contact-container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">Interested in a custom topographic print? Have a specific location in mind? Reach out.</p>
+      <a href="mailto:hello@topoprints.net" class="btn btn-lg">hello@topoprints.net</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div class="footer-brand">
+        <a href="/" class="logo">topo<span>prints</span></a>
+        <p>Any location. Real elevation. Tangible terrain.</p>
+      </div>
+      <div class="footer-copy">
+        <p>&copy; Jonas Immanuel Frey. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/terrain.js"></script>
+
+</body>
+</html>
