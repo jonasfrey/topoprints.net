@@ -1,7 +1,7 @@
 // Copyright (c) Jonas Immanuel Frey. All rights reserved.
 // Licensed under the terms specified by Jonas Immanuel Frey.
 
-const PORT = 8000;
+const PORT = 8003;
 
 async function handler(req: Request): Promise<Response> {
   const url = new URL(req.url);
